@@ -1,0 +1,40 @@
+.pgograms{
+    background-color: #111517;
+    padding-top: 55px;
+}
+.programs__title{
+    color: white;
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 1px;
+}
+.programs__list-title{
+    color: white;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1.65px;
+
+}
+.programs__list-subject-title{
+    font-family: $main-font;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 0.65px;
+    color: $accent-color;
+}
+.programs__list-suject-description{
+    font-family: $main-font;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+    color: #858585;
+}
+.programs__list-subject {
+    counter-reset: variable;
+}
+.programs__list-subject-title::before{
+    counter-increment: variable;
+}
