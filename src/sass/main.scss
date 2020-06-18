@@ -6,5 +6,8 @@
 @import './helpers/fonts.scss';
 @import './helpers/variables.scss';
 @import './helpers/mixins.scss';
-
+@import './helpers/placeholders.scss';
 @import 'base.scss';
+
+@import './components/container.scss';
+@import './sections/method-section.scss';
