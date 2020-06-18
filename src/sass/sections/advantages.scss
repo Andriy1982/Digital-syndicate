@@ -1,0 +1,35 @@
+.advantages {
+  padding: 30px 0 50px;
+}
+.advantages-list {
+  font-family: $main-font;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 20px;
+  color: $text-main-secondary-color;
+  letter-spacing: 0.5px;
+  padding-left: 48px;
+  &__item {
+    display: flex;
+    width: 198px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  &__svg-wrapper {
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../images/advantages_border.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+  }
+  &__svg {
+    width: 58px;
+    height: 40px;
+    fill: $accent-color;
+  }
+}
