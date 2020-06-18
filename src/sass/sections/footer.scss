@@ -1,0 +1,89 @@
+.footer {
+  text-align: center;
+}
+
+.link-tel {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #111517;
+    line-height: 2.083;
+    letter-spacing: 0.9px;
+
+    &::before {
+        position: absolute;
+        top: 8px;
+        left: 26px;
+        display: inline-block;
+        width: 22px;
+        height: 26px;
+        content: '';
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../images/icons/svg/noun_call.svg);
+    }
+
+}
+
+.link-instagram {
+    margin: 0 auto;
+    width: 37px;
+    height: 37px;
+    background-image: url(../images/icons/svg/instagram.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.footer-wrap {
+    background-color: #111517;
+
+    &__text {
+        padding: 20px 0;
+        font-family: $main-font;
+        font-size: 11px;
+        line-height: 3.409;
+        text-align: center;
+        color: rgba(253, 254, 254, 0.42);
+
+        &::before {
+            content: '\0040' ;
+        }
+    }
+}
+
+// .Footer_2 {
+//     position: absolute;
+//     left: 0px;
+//     top: 0px;
+//     width: 320px;
+//     height: 8457px;
+//     z-index: 493;
+//   }
+//   .__Все_права_защищены__2019 {
+//     font-size: 11px;
+//     font-family: "Montserrat";
+//     color: rgba(253, 254, 254, 0.42);
+//     line-height: 3.409;
+//     text-align: center;
+//     position: absolute;
+//     left: -2.855px;
+//     top: 8452.356px;
+//     width: 184px;
+//     height: 11px;
+//     z-index: 492;
+//   }
+//   .small_footer {
+//     background-color: rgb(17, 21, 23);
+//     position: absolute;
+//     left: 0px;
+//     top: 8385px;
+//     width: 320px;
+//     height: 72px;
+//     z-index: 491;
+//   }
+  
+
+  
