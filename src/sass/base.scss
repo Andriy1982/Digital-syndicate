@@ -35,6 +35,8 @@ img {
   border: 0;
   text-transform: none;
   cursor: pointer;
+  outline: none;
+  background-color: transparent;
 }
 .visually-hidden {
   /* Удаляем элемент из потока документа */

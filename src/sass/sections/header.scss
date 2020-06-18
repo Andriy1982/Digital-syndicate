@@ -1,0 +1,69 @@
+.header {
+  padding: 26px 0 50px;
+  font-family: $main-font;
+  background-image: url(../../images/Shape_11.png);
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: cover;
+  &__title {
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin: 0 0 38px;
+    &_span {
+      display: block;
+    }
+  }
+  &__text {
+    margin-bottom: 36px;
+  }
+  &__description {
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    margin-bottom: 38px;
+    &_first {
+      color: $text-header-color;
+      display: block;
+      font-weight: 400;
+    }
+    &_second {
+      color: $accent-color;
+    }
+  }
+  &__image {
+    img {
+      margin: 0 auto;
+    }
+  }
+}
+.logo-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+}
+.site-logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 78px;
+  color: #000000;
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  &__fire {
+    fill: $accent-color;
+  }
+  &__text {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 5.3px;
+    &_first {
+      color: $accent-color;
+    }
+  }
+}
