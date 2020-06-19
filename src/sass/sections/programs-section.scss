@@ -8,14 +8,29 @@
         font-size: 20px;
         line-height: 33px;
         letter-spacing: 1px;
+        @media (min-width: 768px){
+            text-align: left;
+            font-size: 26px;
+            line-height: 62px;
+            font-weight: 800;
+        }
     }
     &__img-mobile{
         position: absolute;
         transform: translateY(-40px);
         right: 0;
+        @media (min-width: 768px){
+            display: none;
+        }
     }
     &__img-tablet{
         display: none;
+        @media (min-width: 768px){
+            display: block;
+            position: absolute;
+            transform: translateY(-40px);
+            right: 0;
+        }
     }
     &__img-desktop{
         display: none;
@@ -25,6 +40,10 @@
         width: 125px;
         margin: 0 auto;
         position: relative;
+        @media (min-width: 768px){
+            margin:0 0 0 180px;
+            width: auto;
+        }
         &-title{
         color: white;
         font-family: $main-font;
@@ -49,8 +68,17 @@
             position: absolute;
             width: 10px;
             height: 10px;
-            transform: translate(-29px, 10px);
+            transform: translate(-30px, 10px);
+            @media (min-width: 768px){
+                transform: translate(-40px, 10px);
             }
+            }
+        }
+        &-subject{
+            @media (min-width: 768px){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            } 
         }
         &-suject-description{
         font-family: $main-font;
@@ -84,7 +112,11 @@
             width: 2px;
             height: 1180px;
             background-color: #858585;
-            transform: translate(-25px, 15px);
+            transform: translate(-26px, 15px);
+            @media (min-width: 768px){
+                transform: translate(-36px, 15px);
+                height: 700px;
+            }
         }
     }
 }
