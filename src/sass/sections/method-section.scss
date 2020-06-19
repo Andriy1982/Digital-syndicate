@@ -1,0 +1,96 @@
+.method-section {
+  padding-top: 202px;
+  padding-bottom: 53px;
+}
+.method-title {
+  margin-bottom: 34px;
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: $text-main-secondary-color;
+}
+
+.method-list__item {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 28px;
+  padding-right: 28px;
+  box-shadow: 4px 6.928px 23.68px 8.32px #1d1d1b1c;
+  &:hover {
+    background-color: $accent-color;
+    cursor: pointer;
+    transition: all 200ms linear;
+    .method-icons {
+      fill: $text-main-first-color;
+    }
+    .method-subtitle {
+      color: $text-main-first-color;
+    }
+    .method-description {
+      color: $text-main-first-color;
+    }
+    .method-subtitle::after {
+      @extend %strip;
+      background-color: $text-main-first-color;
+    }
+  }
+}
+.method-icons {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  fill: $accent-color;
+  &_study-program {
+    width: 42px;
+    height: 45px;
+  }
+  &_mobile-laerning {
+    width: 44px;
+    height: 45px;
+  }
+  &_open-book {
+    width: 50px;
+    height: 36px;
+  }
+  &_global-communication {
+    width: 44px;
+    height: 45px;
+  }
+  &_female-student {
+    width: 39px;
+    height: 45px;
+  }
+  &_audio-book {
+    width: 50px;
+    height: 43px;
+  }
+}
+.method-subtitle {
+  margin-bottom: 16px;
+  font-family: $main-font;
+  font-size: 13px;
+  line-height: 1.538;
+  letter-spacing: 0.65px;
+  font-weight: 700;
+  color: #111517;
+  &::after {
+    @extend %strip;
+    margin: 20px auto 0;
+  }
+}
+.method-description {
+  margin: 0;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 11px;
+  line-height: 1.818;
+  letter-spacing: 0.55px;
+  font-weight: 400;
+  color: $text-main-color;
+}
+
+.method-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
