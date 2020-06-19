@@ -1,0 +1,101 @@
+.teacher {
+  font-family: $main-font;
+  padding: 242px 0 52px;
+
+  @media (min-width: 768px) {
+    padding: 234px 0 64px;
+  }
+
+  &-title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    margin: 0 0 24px;
+    letter-spacing: 0.4px;
+
+    @media (min-width: 768px) {
+      font-size: 26px;
+      margin: 0 0 30px;
+    }
+  }
+
+  &-photo {
+    margin-bottom: 18px;
+
+    // @media (min-width: 768px) {
+    // }
+  }
+}
+
+.teacher-about {
+  &__name {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 30px;
+    margin: 0 0 24px;
+    letter-spacing: 0.32px;
+    border-bottom: 1px solid $text-main-color;
+  }
+
+  &__list-skills {
+    margin-bottom: 18px;
+
+    &:after {
+      @extend %strip;
+      margin-top: 22px;
+      margin-left: 18px;
+    }
+
+    &_item {
+      display: flex;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &-icon {
+        background: url(../images/icons/svg/noun_check.svg) no-repeat;
+        background-size: cover;
+        display: block;
+        width: 16px;
+        height: 13px;
+      }
+
+      &-description {
+        margin: 0;
+        width: 242px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.26px;
+      }
+    }
+  }
+
+  &__description {
+    font-size: 11px;
+    color: $text-main-color;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    padding: 0 18px;
+    margin: 0 0 16px;
+
+    &_formatting {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $accent-color;
+    padding: 0 18px;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+}
