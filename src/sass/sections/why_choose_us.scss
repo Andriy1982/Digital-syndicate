@@ -2,7 +2,7 @@
     position: absolute;
     left: 50%;
     margin-left: -140px;
-    transform: translateY(-50%);
+    transform: translateY(-65%);
     &__title{
         margin: 0;
         text-align: left;
@@ -23,7 +23,6 @@
             font-weight: 700;
             font-size: 13px;
             line-height: 20px;
-            margin-left: 30px;
             letter-spacing: 0.65px;
             }
         }
@@ -32,7 +31,7 @@
 
 .choose__list {
     counter-reset: section;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 10px;
     list-style: none;
 }
@@ -54,7 +53,7 @@
             height: 2px;
             margin-right: 12px;
             position: absolute;
-            transform: translate(40px, -15px);
+            transform: translate(10px, -15px);
             }
 
 
@@ -62,5 +61,5 @@
     display: block;
 }
 .choose__list-item:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
