@@ -42,7 +42,7 @@
   width: 0px;
   height: 80%;
   top: 3px;
-  left: 50px;
+  left: 45px;
   z-index: 1;
 }
 .guarantee__item::before {
@@ -55,6 +55,6 @@
   top: 0px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/icons/svg/icon-fire.svg);
+  background-image: url(../../images/icons/fire.png);
   z-index: 2;
 }
