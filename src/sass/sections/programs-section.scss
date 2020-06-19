@@ -2,6 +2,11 @@
     background-color: #111517;
     padding-top: 55px;
     padding-bottom: 440px;
+    @media (min-width: 768px){
+        padding-bottom: 360px;
+        padding-top: 70px;
+    }
+    
     &__title{
         color: white;
         font-family: $main-font;
@@ -28,7 +33,7 @@
         @media (min-width: 768px){
             display: block;
             position: absolute;
-            transform: translateY(-40px);
+            transform: translateY(-175px);
             right: 0;
         }
     }
