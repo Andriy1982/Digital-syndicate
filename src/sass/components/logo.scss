@@ -1,0 +1,22 @@
+.site-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78px;
+    color: #000000;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    &__fire {
+      fill: $accent-color;
+    }
+    &__text {
+      text-transform: uppercase;
+      color: #000000;
+      font-weight: bold;
+      font-size: 5.3px;
+      &_first {
+        color: $accent-color;
+      }
+    }
+  }
