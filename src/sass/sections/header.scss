@@ -1,7 +1,7 @@
 .header {
   padding: 26px 0 50px;
   font-family: $main-font;
-  background-image: url(../../images/Shape_11.png);
+  background-image: url(../../images/header/Shape_11.png);
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
@@ -15,15 +15,13 @@
       display: block;
     }
   }
-  &__text {
-    margin-bottom: 36px;
-  }
   &__description {
     font-family: $main-font;
     font-size: 15px;
+    line-height: 20px;
     font-weight: 800;
     letter-spacing: 0.3px;
-    margin-bottom: 38px;
+    margin: 0 0 38px;
     &_first {
       color: $text-header-color;
       display: block;
@@ -65,5 +63,34 @@
     &_first {
       color: $accent-color;
     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__text {
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 36px 0 94px;
+    background-image: url(../../images/header/Shape_2.png);
+    &__text {
+      width: 280px;
+      padding-top: 10px;
+    }
+    &__title {
+      font-size: 26px;
+    }
+  }
+  .logo-nav-wrapper {
+    margin-bottom: 40px;
+  }
+  .header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .site-btn {
+    margin: 0;
   }
 }

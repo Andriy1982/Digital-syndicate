@@ -50,7 +50,12 @@
                 </button>
             </div>
             <div class="header__image">
-                <img src="../images/header-foto.png" alt="english-lesson" width="215" height="185">
+                <picture>
+                    <source srcset="../images/header/header-foto-tablet.png" media="(min-width:768px)">
+                    <source srcset="../images/header/header-foto.png" media="(min-width:320px)">
+                    <img src="../images/header/header-foto.png" alt="english-lesson">
+
+                </picture>
             </div>
         </div>
     </div>
