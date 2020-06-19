@@ -1,6 +1,14 @@
 .method-section {
   padding-top: 202px;
   padding-bottom: 53px;
+  @media (min-width: 768px) {
+    padding-top: 230px;
+    padding-bottom: 50px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 100px;
+  }
 }
 .method-title {
   margin-bottom: 34px;
@@ -10,8 +18,29 @@
   letter-spacing: 1px;
   font-weight: 800;
   color: $text-main-secondary-color;
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.269;
+    margin-bottom: 38px;
+    letter-spacing: 0.858px;
+  }
+  @media (min-width: 1280px) {
+    text-align: left;
+    font-size: 42px;
+    line-height: 1.489;
+    letter-spacing: 2.1px;
+    margin-bottom: 44px;
+  }
 }
-
+.method-list {
+  @media (min-width: 768px) {
+    @include center-flex(hor);
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1280px) {
+    justify-content: space-between;
+  }
+}
 .method-list__item {
   padding-top: 30px;
   padding-bottom: 24px;
@@ -34,6 +63,24 @@
     .method-subtitle::after {
       @extend %strip;
       background-color: $text-main-first-color;
+    }
+  }
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 290px;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 23px;
+    }
+  }
+  @media (min-width: 1280px) {
+    width: 390px;
+    padding-top: 41px;
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 19px;
     }
   }
 }
@@ -66,6 +113,9 @@
     width: 50px;
     height: 43px;
   }
+  @media (min-width: 1280px) {
+    margin-bottom: 28px;
+  }
 }
 .method-subtitle {
   margin-bottom: 16px;
@@ -79,6 +129,14 @@
     @extend %strip;
     margin: 20px auto 0;
   }
+  @media (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.62;
+    letter-spacing: 0.9px;
+    &::after {
+      margin-top: 16px;
+    }
+  }
 }
 .method-description {
   margin: 0;
@@ -89,8 +147,9 @@
   letter-spacing: 0.55px;
   font-weight: 400;
   color: $text-main-color;
-}
-
-.method-list__item:not(:last-child) {
-  margin-bottom: 16px;
+  @media (min-width: 1280px) {
+    font-size: 15px;
+    line-height: 2.083;
+    letter-spacing: 0.75px;
+  }
 }
