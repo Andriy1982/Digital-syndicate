@@ -1,0 +1,44 @@
+.choose{
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    transform: translateY(-100%);
+    &__title{
+        margin: 0;
+        text-align: left;
+        color: white;
+        font-family: $main-font;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        &_br{
+            display: block;
+            margin: 0;
+        }
+    }
+    &__list{
+        background-color: white;
+        &-descriptions{
+            font-family: $main-font;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 20px;
+            margin-left: 30px;
+            letter-spacing: 0.65px;
+            }
+        }
+        &_br{
+            display: block;
+        }
+        &-item{
+           
+    }
+}
+
+.choose__list{
+    counter-reset: section;
+}
+.choose_list-item::before{
+    counter-increment: section;
+    content: "0" counter(section);
+}
