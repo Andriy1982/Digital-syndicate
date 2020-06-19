@@ -1,0 +1,60 @@
+.guarantee-section {
+  padding-top: 320px;
+}
+.guarantee-section__title {
+  font-family: 'MontseratEB', sans-serif;
+  font-weight: 800;
+  margin-bottom: 3px;
+  color: #111517;
+  font-size: 20px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.guarantee {
+  background-color: #f1f1f1;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+.guarantee__list {
+  position: relative;
+  list-style: none;
+}
+.guarantee__item {
+  font-family: 'MontserratM,sants-serif';
+  font-weight: 500;
+  position: relative;
+  padding-left: 36px;
+  letter-spacing: 0.5px;
+  width: 280px;
+  color: #18191d;
+}
+.guarantee__item:not(:last-child) {
+  margin-bottom: 17px;
+}
+.guarantee__list::after {
+  content: '';
+  display: inline-block;
+  border-width: 1px;
+  border-color: #bababa;
+  border-style: dotted;
+  position: absolute;
+  width: 0px;
+  height: 80%;
+  top: 3px;
+  left: 45px;
+  z-index: 1;
+}
+.guarantee__item::before {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -6px;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../images/icons/fire.png);
+  z-index: 2;
+}
