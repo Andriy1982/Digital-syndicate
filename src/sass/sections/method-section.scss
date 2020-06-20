@@ -85,9 +85,6 @@
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 23px;
     }
-    &:not(:nth-child(2n - 3)) {
-      margin-right: 22px;
-    }
   }
   @media (min-width: 1280px) {
     width: 390px;
