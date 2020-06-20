@@ -1,3 +1,6 @@
+.container {
+  position: relative;
+}
 .header {
   padding: 26px 0 50px;
   font-family: $main-font;
@@ -37,38 +40,171 @@
     }
   }
 }
+.tablet-btn {
+  display: none;
+}
+.nav-btn {
+  display: flex;
+}
+.consultation-btn {
+  padding: 14px;
+  border: 2px solid $accent-color;
+  width: 250px;
+  height: 48px;
+  color: $accent-color;
+  font-family: $sekondary-font;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 42px;
+  &:focus {
+    color: #d35526;
+    border-color: #d35526;
+  }
+}
+#burger-toggle {
+  opacity: 0;
+}
+
+#burger-toggle:checked ~ .nav-menu__wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+#burger-toggle:checked ~ .burger-btn > span {
+  transform: rotate(45deg);
+  background-color: white;
+}
+#burger-toggle:checked ~ .burger-btn > span::before {
+  background-color: white;
+  top: 0;
+}
+#burger-toggle:checked ~ .burger-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: white;
+}
+
+.burger-btn {
+  display: flex;
+  position: fixed;
+  top: 28px;
+  z-index: 1;
+  width: 26px;
+  height: 22px;
+  align-items: center;
+  span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: all 1 linear;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: black;
+      bottom: 5px;
+      position: absolute;
+      transition-duration: 0.5s;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      top: 5px;
+      transition-duration: 0.5s;
+    }
+  }
+}
 .logo-nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 58px;
 }
-// .site-logo {
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 78px;
-//   color: #000000;
-//   font-family: $main-font;
-//   font-size: 15px;
-//   font-weight: 800;
-//   letter-spacing: 0.5px;
-//   &__fire {
-//     fill: $accent-color;
-//   }
-//   &__text {
-//     text-transform: uppercase;
-//     color: #000000;
-//     font-weight: bold;
-//     font-size: 5.3px;
-//     &_first {
-//       color: $accent-color;
-//     }
-//   }
-// }
-
+@media (min-width: 320px) and (max-width: 1279px) {
+  .nav-menu__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    justify-content: center;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition-duration: 0.5s;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .header__text {
     margin-bottom: 36px;
+  }
+  .consultation-btn {
+    margin: 0 auto;
+    font-size: 11px;
+  }
+  .site-logo-overlay {
+    position: fixed;
+    top: 25px;
+    left: 20px;
+    color: white;
+    &__text {
+      color: white;
+    }
+  }
+  .nav-list {
+    display: block;
+    margin-bottom: 44px;
+    width: 250px;
+    &__link {
+      font-family: $sekondary-font;
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .consultation-btn {
+    margin: 0;
+  }
+  .tablet-btn {
+    display: block;
+    margin-left: 180px;
+  }
+  .site-logo-overlay {
+    position: fixed;
+    top: 39px;
+    left: 39px;
+    color: white;
+    &__text {
+      color: white;
+    }
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-list {
+    &__item:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -83,8 +219,30 @@
       font-size: 26px;
     }
   }
+  .burger-btn {
+    top: 43px;
+  }
+  .nav-list {
+    margin-bottom: 44px;
+    padding-left: 40px;
+    &__link {
+      font-family: $sekondary-font;
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+  .nav-menu {
+    display: flex;
+  }
   .logo-nav-wrapper {
     margin-bottom: 40px;
+  }
+  .consultation-btn {
+    display: block;
   }
   .header-content-wrapper {
     display: flex;
@@ -92,5 +250,110 @@
   }
   .site-btn {
     margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding: 36px 0 94px;
+    background-image: url(../../images/header/Shape_2.png);
+    background-position: bottom;
+    &__text {
+      width: 494px;
+      padding-top: 74px;
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__description {
+      font-size: 18px;
+      margin-bottom: 66px;
+    }
+  }
+  .site-logo-overlay {
+    display: none;
+  }
+  #burger-toggle {
+    display: none;
+  }
+
+  .nav-btn {
+    display: flex;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    &__link {
+      font-family: $sekondary-font;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: $text-header-color;
+      margin-bottom: 0px;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+    &__item {
+      margin-bottom: 0;
+      margin-right: 44px;
+    }
+  }
+  .consultation-btn {
+    margin: 0;
+    font-size: 12px;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .nav-menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1680px) {
+  .header {
+    padding: 27px 0 140px;
+    background-image: url(../../images/header/Shape_3.png);
+    &__text {
+      width: 610px;
+      padding-top: 94px;
+    }
+    &__title {
+      font-size: 52px;
+      line-height: 1.4;
+    }
+    &__description {
+      font-size: 18px;
+      margin-bottom: 60px;
+    }
+    &__image-wrapper {
+      position: absolute;
+      top: 115px;
+      right: -115px;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .nav-list {
+    &__link {
+      font-family: $sekondary-font;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    &__item {
+      margin-right: 57px;
+    }
+  }
+  .consultation-btn {
+    width: 350px;
+    height: 70px;
+    font-size: 14px;
   }
 }
