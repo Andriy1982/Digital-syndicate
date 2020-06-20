@@ -6,28 +6,49 @@
     padding: 234px 0 64px;
   }
 
-  &-title {
+  @media (min-width: 1280px) {
+    padding: 96px 0 92px;
+  }
+
+  &__title {
     font-size: 20px;
     font-weight: 800;
-    line-height: 30px;
+    line-height: 1.5;
     margin: 0 0 24px;
     letter-spacing: 0.4px;
 
     @media (min-width: 768px) {
       font-size: 26px;
-      margin: 0 0 30px;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 42px;
+      margin-bottom: 52px;
     }
   }
 
-  &-photo {
-    margin-bottom: 18px;
-
-    // @media (min-width: 768px) {
-    // }
+  &__wrapper-stylization {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 
 .teacher-about {
+  @media (max-width: 767px) {
+    margin-top: 18px;
+  }
+
+  @media (min-width: 768px) {
+    flex-basis: 394px;
+  }
+
+  @media (min-width: 1280px) {
+    flex-basis: 600px;
+  }
+
   &__name {
     font-size: 16px;
     font-weight: 800;
@@ -35,20 +56,42 @@
     margin: 0 0 24px;
     letter-spacing: 0.32px;
     border-bottom: 1px solid $text-main-color;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1;
+      padding-bottom: 18px;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 30px;
+    }
   }
 
-  &__list-skills {
+  &__list {
     margin-bottom: 18px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 32px;
+    }
 
     &:after {
       @extend %strip;
       margin-top: 22px;
       margin-left: 18px;
+
+      @media (min-width: 768px) {
+        margin-left: 0;
+      }
     }
 
-    &_item {
+    &-item {
       display: flex;
       justify-content: space-between;
+
+      @media (min-width: 768px) {
+        justify-content: start;
+      }
 
       &:not(:last-child) {
         margin-bottom: 20px;
@@ -60,6 +103,10 @@
         display: block;
         width: 16px;
         height: 13px;
+
+        @media (min-width: 768px) {
+          margin-right: 18px;
+        }
       }
 
       &-description {
@@ -69,6 +116,16 @@
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0.26px;
+
+        @media (min-width: 768px) {
+          width: 332px;
+        }
+
+        @media (min-width: 1280px) {
+          font-size: 17px;
+          line-height: 30px;
+          width: 460px;
+        }
       }
     }
   }
@@ -81,11 +138,20 @@
     padding: 0 18px;
     margin: 0 0 16px;
 
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
     &_formatting {
       display: block;
 
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
       }
     }
   }
@@ -97,5 +163,13 @@
     font-size: 11px;
     line-height: 30px;
     letter-spacing: 0.5px;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 17px;
+    }
   }
 }
