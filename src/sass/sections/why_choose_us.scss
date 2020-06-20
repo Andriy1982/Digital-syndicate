@@ -6,7 +6,7 @@
     &__title{
         margin: 0;
         text-align: left;
-        color: white;
+        color: $text-main-first-color;
         font-family: $main-font;
         font-size: 20px;
         line-height: 30px;
@@ -17,7 +17,7 @@
         }
     }
     &__list{
-        background-color: white;
+        background-color:$text-main-first-color;
         &-descriptions{
             font-family: $main-font;
             font-weight: 700;
