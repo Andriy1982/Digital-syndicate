@@ -14,3 +14,14 @@
 .site-btn:focus {
   background-color: #d35526;
 }
+.site-btn:focus .nav-menu__wrapper {
+  visibility: visible;
+}
+
+@media (min-width: 1680px) {
+  .site-btn {
+    width: 350px;
+    height: 70px;
+    font-size: 14px;
+  }
+}

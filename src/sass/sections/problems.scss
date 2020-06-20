@@ -1,0 +1,12 @@
+.problems{
+    background-color: #111517;
+    padding-top: 55px;
+    padding-bottom: 330px;
+        &__list{
+        position: absolute;
+        left: 50%;
+        margin-left: -140px;
+        transform: translateY(10px);
+        }
+    
+}
