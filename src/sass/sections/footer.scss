@@ -88,6 +88,10 @@
         &::before {
             content: '\0040' ;
         }
+
+        @media (min-width: 768px) {
+            text-align: left;
+        }
     }
 }
 
