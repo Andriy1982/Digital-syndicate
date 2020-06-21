@@ -89,7 +89,7 @@
 
 .burger-btn {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 28px;
   z-index: 100;
   width: 26px;
@@ -329,7 +329,7 @@
       line-height: 1.4;
     }
     &__description {
-      font-size: 18px;
+      font-size: 21px;
       margin-bottom: 60px;
     }
     &__image-wrapper {
@@ -344,7 +344,7 @@
   .nav-list {
     &__link {
       font-family: $sekondary-font;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 800;
       text-transform: uppercase;
     }
@@ -355,6 +355,6 @@
   .consultation-btn {
     width: 350px;
     height: 70px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
