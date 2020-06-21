@@ -1,6 +1,4 @@
-.guarantee-section {
-  padding-top: 330px;
-}
+
 .guarantee-section__title {
   font-family: 'MontseratEB', sans-serif;
   font-weight: 800;
@@ -63,9 +61,6 @@
   color: #ff6b08;
 }
 @media (min-width: 768px) {
-  .guarantee-section {
-    padding-top: 320px;
-  }
   .guarantee-section__title {
     margin-bottom: 9px;
     font-size: 26px;
@@ -100,9 +95,6 @@
   }
 }
 @media(min-width: 1280px){
-  .guarantee-section{
-    padding-top: 320px;
-      }
       .guarantee-section__title{
         margin-bottom: 26px;
         font-size: 42px;
