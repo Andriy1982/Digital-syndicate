@@ -1,60 +1,133 @@
 .guarantee-section {
-  padding-top: 320px;
-}
-.guarantee-section__title {
-  font-family: 'MontseratEB', sans-serif;
-  font-weight: 800;
-  margin-bottom: 3px;
-  color: #111517;
-  font-size: 20px;
-  line-height: 63px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-.guarantee {
-  background-color: #f1f1f1;
-  padding-top: 22px;
-  padding-bottom: 24px;
-}
-.guarantee__list {
-  position: relative;
-  list-style: none;
-}
-.guarantee__item {
-  font-family: 'MontserratM,sants-serif';
-  font-weight: 500;
-  position: relative;
-  padding-left: 36px;
-  letter-spacing: 0.5px;
-  width: 280px;
-  color: #18191d;
-}
-.guarantee__item:not(:last-child) {
-  margin-bottom: 17px;
-}
-.guarantee__list::after {
-  content: '';
-  display: inline-block;
-  border-width: 1px;
-  border-color: #bababa;
-  border-style: dotted;
-  position: absolute;
-  width: 0px;
-  height: 80%;
-  top: 3px;
-  left: 45px;
-  z-index: 1;
-}
-.guarantee__item::before {
-  display: block;
-  content: '';
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: -6px;
-  top: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../../images/icons/fire.png);
-  z-index: 2;
+  font-family: $main-font;
+  &__title {
+    font-weight: 800;
+    margin-bottom: 3px;
+    color: #111517;
+    font-size: 20px;
+    line-height: 63px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .guarantee-section__title {
+    font-family: 'MontseratEB', sans-serif;
+    font-weight: 800;
+    margin-bottom: 3px;
+    color: #111517;
+    font-size: 20px;
+    line-height: 63px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .guarantee {
+    padding-top: 22px;
+    padding-bottom: 24px;
+    background-color: #f1f1f1;
+    &__list {
+      position: relative;
+      list-style: none;
+      padding: 0;
+      &::after {
+        content: '';
+        display: inline-block;
+        border-width: 1px;
+        border-color: #bababa;
+        border-style: dotted;
+        position: absolute;
+        height: 80%;
+        top: 3px;
+        left: 5px;
+        z-index: 1;
+      }
+    }
+    &__item {
+      font-size: 11px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 36px;
+      letter-spacing: 0.5px;
+      color: #18191d;
+      &_orange {
+        position: relative;
+        color: $accent-color;
+      }
+      &::before {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -6px;
+        top: 0px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../images/icons/fire.png);
+        z-index: 2;
+      }
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .mobile-wrapper-bg {
+      background-color: #f1f1f1;
+    }
+  }
+  @media (min-width: 768px) {
+    .guarantee-section__title {
+      margin-bottom: 9px;
+      font-size: 26px;
+    }
+    .guarantee {
+      padding-top: 34px;
+      padding-bottom: 29px;
+      &__item {
+        padding-left: 42px;
+        letter-spacing: 0.5px;
+        &::before {
+          left: 0;
+        }
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+      &__list {
+        padding: 0 55px;
+        &::after {
+          left: 66px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .guarantee-section__title {
+      margin-bottom: 26px;
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+    .guarantee {
+      padding-top: 48px;
+      padding-bottom: 42px;
+      &__item {
+        padding-left: 56px;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.9px;
+        &::before {
+          width: 35px;
+          height: 35px;
+          left: -8px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+      &__list::after {
+        left: 62px;
+        height: 86%;
+      }
+    }
+  }
 }

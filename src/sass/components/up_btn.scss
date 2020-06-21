@@ -1,0 +1,31 @@
+.up-btn {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/icons/iconmonstr-upload-21.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  //   &:hover {
+  //     // background-color: rgba(211, 85, 38, 0.4);
+  //   }
+}
+@media (min-width: 768px) {
+  .up-btn {
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .up-btn {
+    width: 54px;
+    height: 54px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
