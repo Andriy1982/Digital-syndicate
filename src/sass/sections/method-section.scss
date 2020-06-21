@@ -85,9 +85,6 @@
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 23px;
     }
-    &:not(:nth-child(2n - 3)) {
-      margin-right: 22px;
-    }
     &:nth-child(2n+1) {
       margin-right: 22px;
       }

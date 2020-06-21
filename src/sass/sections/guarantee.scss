@@ -1,3 +1,4 @@
+
 .guarantee-section {
   font-family: $main-font;
   &__title {
@@ -9,6 +10,16 @@
     text-align: center;
     letter-spacing: 1px;
   }
+
+.guarantee-section__title {
+  font-family: 'MontseratEB', sans-serif;
+  font-weight: 800;
+  margin-bottom: 3px;
+  color: #111517;
+  font-size: 20px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 1px;
 }
 .guarantee {
   padding-top: 22px;
@@ -109,6 +120,7 @@
         width: 35px;
         height: 35px;
         left: -8px;
+
       }
       &:not(:last-child) {
         margin-bottom: 24px;
