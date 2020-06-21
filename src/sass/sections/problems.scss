@@ -1,19 +1,17 @@
-.problems{
-    background-color: #111517;
-    padding-top: 55px;
-    padding-bottom: 330px;
-        &_title{
-            text-align: left;
-            color: white;
-        }
-        &__title_br{
-            display: block;
-        }
-        &__list{
-        position: absolute;
-        transform: translateY(10px);
-        box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-        
-        }
-    
+.problems {
+  background-color: #111517;
+  padding-top: 55px;
+  padding-bottom: 330px;
+  &_title {
+    text-align: left;
+    color: white;
+  }
+  &__title_br {
+    display: block;
+  }
+  &__list {
+    position: absolute;
+    transform: translateY(10px);
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
+  }
 }

@@ -47,7 +47,9 @@
   display: flex;
 }
 .consultation-btn {
-  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid $accent-color;
   width: 250px;
   height: 48px;
@@ -89,7 +91,7 @@
   display: flex;
   position: fixed;
   top: 28px;
-  z-index: 1;
+  z-index: 100;
   width: 26px;
   height: 22px;
   align-items: center;
@@ -137,6 +139,7 @@
     justify-content: center;
     visibility: hidden;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -241,9 +244,7 @@
   .logo-nav-wrapper {
     margin-bottom: 40px;
   }
-  .consultation-btn {
-    display: block;
-  }
+
   .header-content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -354,6 +355,6 @@
   .consultation-btn {
     width: 350px;
     height: 70px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
