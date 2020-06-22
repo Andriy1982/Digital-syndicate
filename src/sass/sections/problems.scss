@@ -1,50 +1,46 @@
+.problems {
+  position: relative;
+  background-color: #111517;
+  padding-top: 55px;
+  padding-bottom: 330px;
+  &_title {
+    text-align: left;
+    color: $text-main-first-color;
+    font-size: 20px;
+    line-height: 1.5;
 
-.problems{
-    position: relative;
-    background-color: #111517;
-    padding-top: 55px;
-    padding-bottom: 330px;
-        &_title{
-            text-align: left;
-            color: $text-main-first-color;
-            font-size: 20px;
-            line-height: 1.5;
+    @media (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.269;
+    }
+    @media (min-width: 1280px) {
+      font-size: 42px;
+      line-height: 1.346;
+    }
+  }
+  &__title_br {
+    display: block;
+  }
+  &__list {
+    position: absolute;
+    bottom: -140px;
+    box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
 
-            @media (min-width: 768px) {
-                font-size: 26px;
-                line-height: 1.269;
-            }
+    @media (min-width: 1280px) {
+      bottom: -70px;
+    }
+  }
 
-            @media (min-width: 1280px){
-                font-size: 42px;
-                line-height: 1.346;
-            }
-        }
-        &__title_br{
-            display: block;
-        }
-        &__list{
-        position: absolute;
-        bottom: -140px;
-        box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
-        
-        @media (min-width: 1280px) {
-            bottom: -70px;
-        }
+  @media (min-width: 768px) {
+    padding-top: 64px;
+    padding-bottom: 180px;
+    background-image: url(../images/11.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 
-        }
-
-        @media (min-width: 768px) {
-            padding-top: 64px;
-            padding-bottom: 180px;
-            background-image: url(../images/11.png);
-            background-repeat: no-repeat;
-            background-position: right;
-        }
-
-        @media (min-width: 1280px) {
-            padding-top: 72px;
-            padding-bottom: 296px;
-        }
+  @media (min-width: 1280px) {
+    padding-top: 72px;
+    padding-bottom: 296px;
+  }
 }
-

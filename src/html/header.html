@@ -1,5 +1,5 @@
 <header class="header" id="scroll">
-    <div class="container">
+    <div class="container container-brg-btn">
         <div class="logo-nav-wrapper">
             <a href="#" class="site-logo link">Hell
                 <svg class="site-logo__fire" width="18px" height="23px" viewBox="0 0 68 68"
@@ -29,7 +29,7 @@
             </a>
 
             <div class="tablet-btn">
-                <a href="#" class="consultation-btn link">
+                <a href="tel:+380000000000" class="consultation-btn link">
                     консультация по телефону
                 </a>
             </div>
@@ -80,14 +80,14 @@
                             <li class="nav-list__item">
                                 <a href="#" class="nav-list__link link">контакты</a>
                             </li>
+                            <li class="nav-btn">
+                                <a href="tel:+380000000000"
+                                    class="consultation-btn consultation-btn_tablet_overlay link">
+                                    консультация по телефону
+                                </a>
+                            </li>
                         </ul>
-                        <div class="nav-btn">
-                            <a href="#" class="consultation-btn consultation-btn_tablet_overlay link">
-                                консультация по телефону
-                            </a>
-                        </div>
                     </div>
-
                 </div>
             </nav>
         </div>
@@ -102,22 +102,17 @@
                     <span class="header__description_first">Просто не будет.</span>
                     Но ты гарантировано наберешь <span class="header__description_second">+25 баллов</span>
                 </p>
-                <button class="site-btn btn" type="button">
-                    хочу на бесплатное занятие
-                </button>
+                <a href="#form" class="site-btn link">хочу на бесплатное занятие</a>
             </div>
             <div class="header__image-wrapper">
                 <picture class="header__image">
-                    <source
-                        srcset="../images/header/header-foto-desctop1680.png, ../images/header/header-foto-desctop1680@2x.png 2x"
-                        media="(min-width:1680px)" sizes="835">
-                    <source
-                        srcset="../images/header/header-foto-desctop.png, ../images/header/header-foto-desctop@2x.png 2x"
-                        media="(min-width:1280px)">
+                    <source media="(min-width:1680px)"
+                        srcset="../images/header/header-foto-desctop1680.png 1x, ../images/header/header-foto-desctop1680@2x.png 2x">
+                    <source media="(min-width:1280px)"
+                        srcset="../images/header/header-foto-desctop.png 1x, ../images/header/header-foto-desctop@2x.png 2x">
                     <source srcset="../images/header/header-foto-tablet.png" media="(min-width:768px)">
                     <source srcset="../images/header/header-foto.png" media="(min-width:320px)">
-                    <img src="../images/header/header-foto.png" alt="english-lesson" sizes="215" height="185">
-
+                    <img src="../images/header/header-foto.png" alt="english-lesson">
                 </picture>
             </div>
         </div>
