@@ -1,6 +1,6 @@
-// .container {
-//   position: relative;
-// }
+.container-brg-btn {
+  position: relative;
+}
 .header {
   padding: 26px 0 50px;
   // font-family: $main-font;
@@ -61,7 +61,7 @@
   text-transform: uppercase;
   margin-right: 42px;
   &:focus {
-    color: $accent-secondary-color ;
+    color: $accent-secondary-color;
     border-color: $accent-secondary-color;
   }
 }
@@ -75,22 +75,26 @@
 }
 #burger-toggle:checked ~ .burger-btn > span {
   transform: rotate(45deg);
-  background-color: text-main-first-color;
+  background-color: $text-main-first-color;
+  position: fixed;
 }
 #burger-toggle:checked ~ .burger-btn > span::before {
-  background-color: text-main-first-color;
+  background-color: $text-main-first-color;
   top: 0;
+  position: fixed;
 }
 #burger-toggle:checked ~ .burger-btn > span::after {
   top: 0;
   transform: rotate(90deg);
-  background-color: text-main-first-color;
+  background-color: $text-main-first-color;
+  position: fixed;
 }
 
 .burger-btn {
   display: flex;
   position: absolute;
-  top: 28px;
+  right: 0;
+  top: 3px;
   z-index: 100;
   width: 26px;
   height: 22px;
@@ -101,7 +105,7 @@
     height: 2px;
     background-color: $background-color;
     position: absolute;
-    transition: all 1 linear;
+    transition-duration: 0.5s;
 
     &::before {
       content: '';
@@ -223,7 +227,7 @@
     }
   }
   .burger-btn {
-    top: 43px;
+    top: 12px;
   }
   .nav-list {
     margin-bottom: 44px;
@@ -306,6 +310,8 @@
   .consultation-btn {
     margin: 0;
     font-size: 12px;
+    width: 300px;
+    height: 70px;
   }
   .burger-btn {
     display: none;
