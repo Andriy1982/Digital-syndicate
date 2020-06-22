@@ -59,6 +59,12 @@
       display: flex;
       width: 344px;
       padding-left: 15px;
+      transition-duration: 0.5s;
+      &:hover {
+        .advantages-list__svg {
+          transform: scale(1.4);
+        }
+      }
     }
     &__svg-wrapper {
       width: 106px;
@@ -68,6 +74,7 @@
     &__svg {
       width: 46px;
       height: 40px;
+      transition-duration: 0.5s;
     }
   }
 }
