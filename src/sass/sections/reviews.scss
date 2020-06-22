@@ -1,0 +1,117 @@
+.reviews {
+
+  &__title {
+    text-align: center;
+    font-size: 20px;
+    font-family: $main-font;
+    font-weight: bold;
+    line-height: 1.327;
+    text-align: center;
+    color: $text-main-secondary-color;
+  }
+
+}
+
+.slider {
+  padding-top: 30px;
+  padding-bottom: 36px;
+  width: 82%;
+  margin: 30px 30px;
+  box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 0;
+    max-width: 80px;
+  }
+
+  &__image-wrapper {
+    @media (min-width: 768px) {
+      padding-left: 90px;
+    }
+  }
+
+  &__image-icon {
+    margin: 0 auto;
+    width: 25px;
+    height: 20px;
+    background-image: url("../../images/icons/svg/vk.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 13px;
+    font-family: $main-font;
+    font-weight: bold;
+    line-height: 2.244;
+    color: $accent-color;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    text-align: center;
+    width: 72%;
+    font-size: 12.5px;
+    font-family: $main-font;
+    line-height: 1.333;
+    color: $text-main-color;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__review {
+    margin: 0 auto;
+    text-align: center;
+    width: 72%;
+    font-size: 12px;
+    font-family: $main-font;
+    line-height: 1.75;
+    color: $text-main-secondary-color;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.slider__review-dots {
+  display: inline;
+}
+
+.slider__review-more {
+  display: none;
+}
+
+.slider__review-btn {
+  display: inline;
+  outline: none;
+  border: none;
+  font-size: 11px;
+  font-family: $main-font;
+  text-decoration: underline;
+  line-height: 1.818;
+  background-color: transparent;
+  color: $accent-color;
+  cursor: pointer;
+}

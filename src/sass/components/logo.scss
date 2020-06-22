@@ -1,22 +1,39 @@
 .site-logo {
-    display: flex;
-    flex-wrap: wrap;
-    width: 78px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 78px;
+  color: #000000;
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  &__fire {
+    fill: $accent-color;
+  }
+  &__text {
+    text-transform: uppercase;
     color: #000000;
-    font-family: $main-font;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 5.3px;
+    &_first {
+      color: $accent-color;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .site-logo {
+    width: 128px;
+    font-size: 25px;
     &__fire {
-      fill: $accent-color;
+      width: 24px;
+      height: 32px;
     }
     &__text {
-      text-transform: uppercase;
-      color: #000000;
-      font-weight: bold;
-      font-size: 5.3px;
+      font-size: 8.75px;
       &_first {
         color: $accent-color;
       }
     }
   }
+}
