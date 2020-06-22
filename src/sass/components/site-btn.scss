@@ -19,6 +19,12 @@
   visibility: visible;
 }
 
+@media (min-width: 1280px) {
+  .site-btn {
+    width: 300px;
+    height: 70px;
+  }
+}
 @media (min-width: 1680px) {
   .site-btn {
     width: 350px;
