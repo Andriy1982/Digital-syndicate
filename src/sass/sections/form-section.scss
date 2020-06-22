@@ -3,9 +3,10 @@
   padding-top: 58px;
   padding-bottom: 58px;
   background-image: url(../../images/lead-magnit/mobile/mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: $text-main-first-color;
-  font-family: $main-font;
 
   @media (min-width: 768px) {
     height: 532px;
@@ -83,19 +84,9 @@
   }
 }
 
-.form-wrap {
-  padding-bottom: 55px;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    padding-bottom: 30px;
-  }
-  @media (min-width: 1280px) {
-    padding-bottom: 56px;
-  }
-}
-
 .form-input {
+  display: block;
+  margin: 0 auto;
   text-align: left;
   width: 280px;
   font-size: 13px;
@@ -123,13 +114,24 @@
   }
 }
 
+.form-input:last-of-type {
+  margin-bottom: 55px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 1280px) {
+    margin-bottom: 56px;
+  }
+}
+
 .form-input::placeholder {
   font-weight: 700;
   color: #fff;
 }
 
 .lead-btn {
-  display: inline-block;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   letter-spacing: 0.13em;
