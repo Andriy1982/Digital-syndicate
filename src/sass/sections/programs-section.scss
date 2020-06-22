@@ -96,7 +96,7 @@
             &::before{
             content: '';
             border-radius: 50%;
-            background-color: rgb(255, 107, 8);
+            background-color: $accent-color;
             position: absolute;
             width: 10px;
             height: 10px;
@@ -131,18 +131,18 @@
                 font-size: 11px;
                 line-height: 20px;
                 letter-spacing: 0.55px;
-                color: #858585;
+                color: $text-main-color;
                 margin: 0;
                 @media (min-width: 1280px){
                     font-size: 15px;
-                    color: #858585;
+                    color: $text-main-color;
                 }
             }
             &_numeral{
                 font-size: 11px;
                 line-height: 20px;
                 letter-spacing: 0.55px;
-                color: #858585;
+                color: $text-main-color;
                 margin: 0;
                 @media (min-width: 1280px){
                     display: none;
@@ -176,7 +176,7 @@
             content: '';
             width: 2px;
             height: 1180px;
-            background-color: #858585;
+            background-color: $text-main-color;
             transform: translate(-26px, 15px);
                 @media (min-width: 768px){
                 transform: translate(-36px, 15px);
@@ -194,7 +194,7 @@
             content: '';
             display: block;
             height: 2px;
-            background-color: #858585;
+            background-color:$text-main-color;
             width: 100%;
             position: absolute;
             transform: translateY(105px);

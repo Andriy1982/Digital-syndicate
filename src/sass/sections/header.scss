@@ -1,15 +1,15 @@
-// .container {
-//   position: relative;
-// }
+.container-brg-btn {
+  position: relative;
+}
 .header {
   padding: 26px 0 50px;
-  font-family: $main-font;
+  // font-family: $main-font;
   background-image: url(../../images/header/Shape_11.png);
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
   &__title {
-    font-family: $main-font;
+    // font-family: $main-font;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -19,7 +19,7 @@
     }
   }
   &__description {
-    font-family: $main-font;
+    // font-family: $main-font;
     font-size: 15px;
     line-height: 20px;
     font-weight: 800;
@@ -61,8 +61,8 @@
   text-transform: uppercase;
   margin-right: 42px;
   &:focus {
-    color: #d35526;
-    border-color: #d35526;
+    color: $accent-secondary-color;
+    border-color: $accent-secondary-color;
   }
 }
 #burger-toggle {
@@ -75,22 +75,26 @@
 }
 #burger-toggle:checked ~ .burger-btn > span {
   transform: rotate(45deg);
-  background-color: white;
+  background-color: $text-main-first-color;
+  position: fixed;
 }
 #burger-toggle:checked ~ .burger-btn > span::before {
-  background-color: white;
+  background-color: $text-main-first-color;
   top: 0;
+  position: fixed;
 }
 #burger-toggle:checked ~ .burger-btn > span::after {
   top: 0;
   transform: rotate(90deg);
-  background-color: white;
+  background-color: $text-main-first-color;
+  position: fixed;
 }
 
 .burger-btn {
   display: flex;
-  position: fixed;
-  top: 28px;
+  position: absolute;
+  right: 0;
+  top: 3px;
   z-index: 100;
   width: 26px;
   height: 22px;
@@ -99,16 +103,16 @@
     display: block;
     width: 26px;
     height: 2px;
-    background-color: black;
+    background-color: $background-color;
     position: absolute;
-    transition: all 1 linear;
+    transition-duration: 0.5s;
 
     &::before {
       content: '';
       display: block;
       width: 26px;
       height: 2px;
-      background-color: black;
+      background-color: $background-color;
       bottom: 5px;
       position: absolute;
       transition-duration: 0.5s;
@@ -118,7 +122,7 @@
       display: block;
       width: 26px;
       height: 2px;
-      background-color: black;
+      background-color: $background-color;
       position: absolute;
       top: 5px;
       transition-duration: 0.5s;
@@ -161,9 +165,9 @@
     position: fixed;
     top: 25px;
     left: 20px;
-    color: white;
+    color: $text-main-first-color;
     &__text {
-      color: white;
+      color: $text-main-first-color;
     }
   }
   .nav-list {
@@ -196,9 +200,9 @@
     position: fixed;
     top: 39px;
     left: 39px;
-    color: white;
+    color: $text-main-first-color;
     &__text {
-      color: white;
+      color: $text-main-first-color;
     }
   }
   .nav-btn {
@@ -223,7 +227,7 @@
     }
   }
   .burger-btn {
-    top: 43px;
+    top: 12px;
   }
   .nav-list {
     margin-bottom: 44px;
@@ -232,7 +236,7 @@
       font-family: $sekondary-font;
       font-size: 20px;
       font-weight: 800;
-      color: white;
+      color: $text-main-first-color;
       &:hover {
         color: $accent-color;
       }
@@ -306,6 +310,8 @@
   .consultation-btn {
     margin: 0;
     font-size: 12px;
+    width: 300px;
+    height: 70px;
   }
   .burger-btn {
     display: none;
@@ -329,7 +335,7 @@
       line-height: 1.4;
     }
     &__description {
-      font-size: 18px;
+      font-size: 21px;
       margin-bottom: 60px;
     }
     &__image-wrapper {
@@ -338,13 +344,10 @@
       right: -115px;
     }
   }
-  .container {
-    position: relative;
-  }
   .nav-list {
     &__link {
       font-family: $sekondary-font;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 800;
       text-transform: uppercase;
     }
@@ -355,6 +358,6 @@
   .consultation-btn {
     width: 350px;
     height: 70px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
