@@ -1,5 +1,4 @@
 .guarantee-section {
-  font-family: $main-font;
   &__title {
     font-weight: 800;
     margin-bottom: 3px;
@@ -11,7 +10,6 @@
   }
 
   .guarantee-section__title {
-    font-family: 'MontseratEB', sans-serif;
     font-weight: 800;
     margin-bottom: 3px;
     color: #111517;
@@ -47,7 +45,7 @@
       position: relative;
       padding-left: 36px;
       letter-spacing: 0.5px;
-      color: #18191d;
+      color: $text-main-secondary-color;
       &_orange {
         position: relative;
         color: $accent-color;
