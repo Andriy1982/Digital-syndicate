@@ -107,6 +107,18 @@
   }
 }
 
+.form-input:focus {
+  outline: none;
+}
+
+.form-input:required:focus:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+}
+
+.form-input:required:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
 .form-input:not(:last-child) {
   margin-bottom: 20px;
 

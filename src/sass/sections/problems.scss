@@ -34,7 +34,7 @@
   @media (min-width: 768px) {
     padding-top: 64px;
     padding-bottom: 180px;
-    background-image: url(../images/11.png);
+    background-image: url(../images/fire.png);
     background-repeat: no-repeat;
     background-position: right;
   }
@@ -42,5 +42,7 @@
   @media (min-width: 1280px) {
     padding-top: 72px;
     padding-bottom: 296px;
+    background-image: url(../images/fire-desktop.png);
+    background-position-y: 56px;
   }
 }

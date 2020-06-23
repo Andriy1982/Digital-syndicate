@@ -1,7 +1,6 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
 @import 'normalize.scss';
 @import './helpers/fonts.scss';
 @import './helpers/variables.scss';
@@ -14,7 +13,7 @@
 @import './components/logo.scss';
 @import './components/slick.scss';
 @import './components/up_btn.scss';
-
+@import './components/zanimation';
 @import './sections/header.scss';
 @import './sections/advantages.scss';
 @import './sections/problems.scss';
