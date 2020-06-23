@@ -1,5 +1,5 @@
 .reviews {
-padding-top: 50px;
+  padding-top: 50px;
 
   &__title {
     text-align: center;
@@ -10,14 +10,14 @@ padding-top: 50px;
     color: $text-main-secondary-color;
 
     @media (min-width: 768px) {
-        font-size: 26px;
-        line-height: 2.405;
+      font-size: 26px;
+      line-height: 2.405;
     }
 
     @media (min-width: 1280px) {
-        font-size: 42px;
-        line-height: 1.489;
-      }
+      font-size: 42px;
+      line-height: 1.489;
+    }
   }
 
   @media (min-width: 1280px) {
@@ -30,7 +30,7 @@ padding-top: 50px;
   padding-bottom: 36px;
   width: 82%;
   margin: 30px 30px;
-  box-shadow: 4px 6.928px 34.96px 11.04px rgba(29, 29, 27, 0.09);
+  box-shadow: 0 6.928px 19px 11.04px rgba(29, 29, 27, 0.09);
 
   @media (min-width: 768px) {
     display: flex;
@@ -80,7 +80,7 @@ padding-top: 50px;
       font-size: 25px;
       line-height: 1.167;
     }
-    
+
   }
 
   &__description {
@@ -111,6 +111,7 @@ padding-top: 50px;
     @media (min-width: 768px) {
       text-align: left;
     }
+
     @media (min-width: 1280px) {
       font-size: 16.667px;
       line-height: 1.75;
