@@ -1,6 +1,15 @@
 .container-brg-btn {
   position: relative;
 }
+.container-overlay {
+  position: relative;
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 440px;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 688px;
+  }
+}
 .header {
   padding: 26px 0 50px;
   // font-family: $main-font;
@@ -93,8 +102,8 @@
 .burger-btn {
   display: flex;
   position: absolute;
-  right: 0;
   top: 3px;
+  right: 20px;
   z-index: 100;
   width: 26px;
   height: 22px;
@@ -153,6 +162,11 @@
     transition-duration: 0.5s;
   }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .site-logo-overlay {
+    left: 20px;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .header__text {
     margin-bottom: 36px;
@@ -164,16 +178,12 @@
   .site-logo-overlay {
     position: fixed;
     top: 25px;
-    left: 20px;
     color: $text-main-first-color;
     &__text {
       color: $text-main-first-color;
     }
   }
   .nav-list {
-    display: block;
-    margin-bottom: 44px;
-    width: 250px;
     &__link {
       font-family: $sekondary-font;
       font-size: 20px;
@@ -199,7 +209,6 @@
   .site-logo-overlay {
     position: fixed;
     top: 39px;
-    left: 39px;
     color: $text-main-first-color;
     &__text {
       color: $text-main-first-color;
@@ -209,6 +218,9 @@
     display: none;
   }
   .nav-list {
+    width: 300px;
+    padding-top: 45px;
+    margin: 0 auto;
     &__item:not(:last-child) {
       margin-bottom: 24px;
     }
@@ -230,8 +242,6 @@
     top: 12px;
   }
   .nav-list {
-    margin-bottom: 44px;
-    padding-left: 40px;
     &__link {
       font-family: $sekondary-font;
       font-size: 20px;

@@ -1,3 +1,6 @@
+.list-wrapper {
+  position: relative;
+}
 .problems {
   position: relative;
   background-color: #111517;
@@ -23,16 +26,18 @@
   }
   &__list {
     position: absolute;
-    bottom: -140px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
     box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
 
-    @media (min-width: 1280px) {
-      bottom: -70px;
-    }
+    // @media (min-width: 1280px) {
+    //   bottom: -70px;
+    // }
   }
 
   @media (min-width: 768px) {
-    padding-top: 64px;
+    padding-top: 44px;
     padding-bottom: 180px;
     background-image: url(../images/fire.png);
     background-repeat: no-repeat;
@@ -40,7 +45,7 @@
   }
 
   @media (min-width: 1280px) {
-    padding-top: 72px;
+    padding-top: 52px;
     padding-bottom: 296px;
     background-image: url(../images/fire-desktop.png);
     background-position-y: 56px;
