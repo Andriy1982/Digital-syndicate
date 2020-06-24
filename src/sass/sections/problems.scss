@@ -1,3 +1,6 @@
+.list-wrapper {
+  position: relative;
+}
 .problems {
   position: relative;
   background-color: #111517;
@@ -23,12 +26,14 @@
   }
   &__list {
     position: absolute;
-    bottom: -140px;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
     box-shadow: 4px 6.928px 15.54px 5.46px rgba(29, 29, 27, 0.04);
 
-    @media (min-width: 1280px) {
-      bottom: -70px;
-    }
+    // @media (min-width: 1280px) {
+    //   bottom: -70px;
+    // }
   }
 
   @media (min-width: 768px) {
