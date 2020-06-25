@@ -1,1 +1,7 @@
-# Digital-syndicate
+## Командный проект команды Digital-sndicate
+# HeIIEN Адский английский
+
++ ul Учасники проекта
+  + ul Андрей Кричкивський
+  + ul Владислав Багрий
+  + ul [Андрей Кричкивський]:https://github.com/Andriy1982
