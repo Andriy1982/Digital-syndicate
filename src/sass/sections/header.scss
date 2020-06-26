@@ -12,13 +12,11 @@
 }
 .header {
   padding: 26px 0 50px;
-  // font-family: $main-font;
-  background-image: url(../../images/header/Shape_11.png);
+  background-image: url(../images/header/Shape_11.png);
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
   &__title {
-    // font-family: $main-font;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -28,7 +26,6 @@
     }
   }
   &__description {
-    // font-family: $main-font;
     font-size: 15px;
     line-height: 20px;
     font-weight: 800;
@@ -232,7 +229,7 @@
 @media (min-width: 768px) {
   .header {
     padding: 36px 0 94px;
-    background-image: url(../../images/header/Shape_2.png);
+    background-image: url(../images/header/Shape_2.png);
     &__text {
       width: 280px;
       padding-top: 10px;
@@ -274,7 +271,7 @@
 @media (min-width: 1280px) {
   .header {
     padding: 36px 0 94px;
-    background-image: url(../../images/header/Shape_2.png);
+    background-image: url(../images/header/Shape_2.png);
     background-position: bottom;
     &__text {
       width: 494px;
@@ -338,7 +335,7 @@
 @media (min-width: 1680px) {
   .header {
     padding: 27px 0 140px;
-    background-image: url(../../images/header/Shape_3.png);
+    background-image: url(../images/header/Shape_3.png);
     &__text {
       width: 610px;
       padding-top: 94px;
