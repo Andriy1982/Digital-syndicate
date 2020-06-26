@@ -8,6 +8,11 @@
   @media (min-width: 1280px) {
     bottom: -14px;
   }
+  @media (min-width: 1680px) {
+    bottom: -224px;
+  }
+
+
   &_br {
     @media (min-width: 1280px) {
       display: block;
@@ -69,6 +74,11 @@
         font-size: 18px;
         line-height: 30px;
       }
+      @media (min-width: 1680px) {
+        font-size: 21px;
+        line-height: 1.4;
+      }
+
       &::before {
         counter-increment: section;
         content: '0' counter(section);
