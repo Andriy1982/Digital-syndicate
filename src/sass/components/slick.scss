@@ -4,7 +4,6 @@
   cursor: pointer;
 }
 
-
 // /* Слайдер запущен */
 // .slick-slider.slick-initialized {}
 
@@ -42,10 +41,14 @@
 /* Стрелка */
 .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 46%;
   z-index: 10;
   font-size: 0;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    top: 40%;
+  }
 }
 
 /* Стрелка влево */
@@ -88,22 +91,34 @@
 
 .slick-dots li {
   list-style: none;
-
 }
 
 .slick-dots li:not(:last-of-type) {
   margin-right: 11px;
+
+  @media (min-width: 768px) {
+    margin-right: 22px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-right: 36px;
+  }
 }
 
 /* Активная точка */
 .slick-dots li.slick-active {
   border: 3px solid $accent-color;
   border-radius: 50%;
-  width: 31px;
-  height: 31px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    width: 58px;
+    height: 58px;
+  }
 }
 
 /* Элемент точки */
@@ -117,34 +132,39 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 #slick-slide-control00 {
-  background-image: url("./../../images/photos/slider-person-1.png");
+  background-image: url('./../../images/photos/slider-person-1.png');
 }
 
 #slick-slide-control01 {
-  background-image: url("./../../images/photos/slider-person-2.png");
+  background-image: url('./../../images/photos/slider-person-2.png');
 }
 
 #slick-slide-control02 {
-  background-image: url("./../../images/photos/slider-person-3.png");
+  background-image: url('./../../images/photos/slider-person-3.png');
 }
 
 #slick-slide-control03 {
-  background-image: url("./../../images/photos/slider-person-4.png");
+  background-image: url('./../../images/photos/slider-person-4.png');
 }
 
 #slick-slide-control04 {
-  background-image: url("./../../images/photos/slider-person-5.png");
+  background-image: url('./../../images/photos/slider-person-5.png');
 }
 
 #slick-slide-control05 {
-  background-image: url("./../../images/photos/slider-person-6.png");
+  background-image: url('./../../images/photos/slider-person-6.png');
 }
 
 #slick-slide-control06 {
-  background-image: url("./../../images/photos/slider-person-7.jpg");
+  background-image: url('./../../images/photos/slider-person-7.jpg');
 }
 
 // @media (min-width: 768px) {}
