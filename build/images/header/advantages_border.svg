@@ -1,1 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><defs><style>.str0{stroke:#ff6b08;stroke-width:2;stroke-miterlimit:22.9256}.fil0{fill:none}</style></defs><g id="Слой_x0020_1"><path class="fil0 str0" d="M-1 0h62" id="_876388448"/><path class="fil0 str0" d="M0-.75v62" id="_876387680"/><path class="fil0 str0" d="M60-1.06v12" id="_876386912"/><path class="fil0 str0" d="M-1 60h62" id="_985061872"/><path class="fil0 str0" d="M60 49v12" id="_985045520"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60px" height="60px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 60 60"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#ff6b08;stroke-width:2;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_876388448">
+   <line class="fil0 str0" x1="-1" y1="0" x2="61" y2= "0" />
+  </g>
+  <g id="_876387680">
+   <line class="fil0 str0" x1="0" y1="-0.75" x2="0" y2= "61.25" />
+  </g>
+  <g id="_876386912">
+   <line class="fil0 str0" x1="60" y1="-1.06" x2="60" y2= "10.94" />
+  </g>
+  <g id="_985061872">
+   <line class="fil0 str0" x1="-1" y1="60" x2="61" y2= "60" />
+  </g>
+  <g id="_985045520">
+   <line class="fil0 str0" x1="60" y1="49" x2="60" y2= "61" />
+  </g>
+ </g>
+</svg>
