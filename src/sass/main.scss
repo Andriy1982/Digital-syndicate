@@ -1,7 +1,6 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
 @import 'normalize.scss';
 @import './helpers/fonts.scss';
 @import './helpers/variables.scss';
@@ -12,14 +11,17 @@
 @import './components/container.scss';
 @import './components/site-btn.scss';
 @import './components/logo.scss';
-
+@import './components/slick.scss';
+@import './components/up_btn.scss';
+@import './components/zanimation';
 @import './sections/header.scss';
 @import './sections/advantages.scss';
+@import './sections/problems.scss';
 @import './sections/method-section.scss';
 @import './sections/teacher-section.scss';
 @import './sections/programs-section.scss';
 @import './sections/guarantee.scss';
 @import './sections/why_choose_us.scss';
+@import './sections/reviews.scss';
 @import './sections/form-section.scss';
 @import './sections/footer.scss';
-
